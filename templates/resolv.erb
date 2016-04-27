@@ -1,0 +1,13 @@
+#################################################################
+#			*** ATTENTION ***
+#
+# This file is managed by Puppet. Any manual modification will
+# be lost after the next Puppet run.
+#
+#################################################################
+
+domain <%= @resolvDomain %>
+search <%= @resolvSearch %>
+<% [@resolvNameserver].flatten.each do |nameserver| -%>
+nameserver <%= nameserver %>
+<% end -%>

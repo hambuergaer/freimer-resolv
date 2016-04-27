@@ -1,0 +1,31 @@
+#################################################################
+#			*** ATTENTION ***
+#
+# This file is managed by Puppet. Any manual modification will
+# be lost after the next Puppet run.
+#
+#################################################################
+# 
+# Puppet configuration changes:
+# -> add dns=none to section [main] to prevent NetworkManager to override /etc/resolv.conf
+#
+#################################################################
+# Configuration file for NetworkManager.
+#
+# See "man 5 NetworkManager.conf" for details.
+#
+# The directory /etc/NetworkManager/conf.d/ can contain additional configuration
+# snippets. Those snippets override the settings from this main file.
+#
+# The files within conf.d/ directory are read in asciibetical order.
+#
+# If two files define the same key, the one that is read afterwards will overwrite
+# the previous one.
+
+[main]
+plugins=ifcfg-rh
+dns=none
+
+[logging]
+#level=DEBUG
+#domains=ALL

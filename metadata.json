@@ -1,0 +1,17 @@
+{
+  "name": "freimer-resolv",
+  "version": "0.1.0",
+  "author": "Frank Reimer",
+  "summary": "This Puppet module configures nameserver settings in /etc/resolv.conf and prevents NetworkManager from overriding /etc/resolv.conf.",
+  "license": "Apache 2.0",
+  "source": "",
+  "issues_url": null,
+  "project_page": null,
+  "dependencies": [
+    {
+      "version_range": ">= 1.0.0",
+      "name": "puppetlabs-stdlib"
+    }
+  ]
+}
+
